@@ -1,0 +1,6 @@
+@tl2_tp5_2024_MaguiNavarro_HostAddress = http://localhost:5121
+
+GET {{tl2_tp5_2024_MaguiNavarro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

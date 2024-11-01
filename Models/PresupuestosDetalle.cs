@@ -9,7 +9,7 @@ public  class PresupuestosDetalle
 {
     private Producto prod;
     private int cantidad;
-    
+
      public PresupuestosDetalle()
     {
     }
@@ -18,7 +18,7 @@ public  class PresupuestosDetalle
         prod= producto;
     }
 
-    public Producto Prod { get => prod; set => prod = value; }
+    public Producto Prod { get => prod;  }
     public int Cantidad { get => cantidad; set => cantidad = value; }
 
 

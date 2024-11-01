@@ -7,19 +7,19 @@ public class Presupuesto
     private int idPresupuesto;
     private string nombreDestinario;
     private List <PresupuestosDetalle> detalle;
+       DateTime fechaCreacion;
 
 
-   public Presupuesto(){ }
-   public Presupuesto(int id, string nombre){
+   public Presupuesto(){
        
-       idPresupuesto= id;
-       nombreDestinario= nombre;
+       fechaCreacion = DateTime.Now;
        detalle= new List<PresupuestosDetalle>();
 
    }
-    public List<PresupuestosDetalle> Detalle { get => detalle; }
-    public string NombreDestinario { get => nombreDestinario;}
-    public int IdPresupuesto { get => idPresupuesto;  }
+    public List<PresupuestosDetalle> Detalle { get => detalle;   }
+    public string NombreDestinario { get => nombreDestinario; set=>nombreDestinario=value ; }
+    public int IdPresupuesto { get => idPresupuesto; set=>idPresupuesto =value;   }
+     public DateTime FechaCreacion { get => fechaCreacion; set => fechaCreacion = value; }
 
 
     public int MontoPresupuesto( ){

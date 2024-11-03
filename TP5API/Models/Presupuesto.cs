@@ -40,4 +40,8 @@ public class Presupuesto
         return Detalle.Sum(d => d.Cantidad);
     }
    
+     public void añadirDetalle(PresupuestosDetalle detalle)
+    {
+        Detalle.Add(detalle);
+    }
 }
